@@ -1,6 +1,6 @@
 class GreetingController < ApplicationController
   def random_greeting
-    greetings = ["Aye, bro", "How the fxck have you been?", "Wassup man?"]
+    greetings = Greet.pluck(:message)
     render json: { greeting: greetings.sample }
   end
 end
