@@ -1,6 +1,6 @@
 class GreetingController < ApplicationController
   def hello
-    render json: { greeting: 'hello' }
+    render json: { greeting: 'hello!!' }
   end
   def random_greeting
     greetings = Greet.pluck(:message)
